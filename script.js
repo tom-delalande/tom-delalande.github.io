@@ -19,12 +19,12 @@ class Carousel {
   }
 
   createDots() {
-    const dotsContainer = this.element.querySelector(".carousel-dots")
+    const dotsContainer = this.element.querySelector(".cd")
     dotsContainer.innerHTML = ""
 
     this.images.forEach((_, index) => {
       const dot = document.createElement("button")
-      dot.className = "carousel-dot"
+      dot.className = "cd-dot"
       dot.setAttribute("aria-label", `View image ${index + 1}`)
       dot.addEventListener("click", () => this.goToSlide(index))
       dotsContainer.appendChild(dot)
@@ -32,8 +32,8 @@ class Carousel {
   }
 
   bindEvents() {
-    const prev = this.element.querySelector(".carousel-prev")
-    const next = this.element.querySelector(".carousel-next")
+    const prev = this.element.querySelector(".cp")
+    const next = this.element.querySelector(".cn")
 
     prev && prev.addEventListener("click", () => this.goToPrevious())
     next && next.addEventListener("click", () => this.goToNext())
@@ -55,9 +55,9 @@ class Carousel {
   }
 
   updateDisplay() {
-    const image = this.element.querySelector(".carousel-image")
-    const counter = this.element.querySelector(".carousel-counter")
-    const dots = this.element.querySelectorAll(".carousel-dot")
+    const image = this.element.querySelector(".ci")
+    const counter = this.element.querySelector(".ct")
+    const dots = this.element.querySelectorAll(".cd-dot")
 
     if (image && this.images[this.currentIndex]) {
       image.src = this.images[this.currentIndex]
@@ -76,13 +76,13 @@ class Carousel {
 
 const scrollToTop = () => {
   const t = document.getElementById("top")
-  window.addEventListener("scroll", () => console.log(window.scrollY, t))
   window.addEventListener("scroll", () => window.scrollY > 300 ? t.classList.add("visible") : t.classList.remove("visible"))
   t.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }))
 }
 
 const carousel = () => {
-  const carousels = document.querySelectorAll(".carousel")
+  const carousels = document.querySelectorAll(".cr")
+  console.log(carousels)
   carousels.forEach((carousel) => new Carousel(carousel))
 }
 
