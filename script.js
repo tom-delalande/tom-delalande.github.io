@@ -25,7 +25,6 @@ class Carousel {
     this.images.forEach((_, index) => {
       const dot = document.createElement("div")
       dot.className = "cd-dot"
-      dot.setAttribute("aria-label", `View image ${index + 1}`)
       dotsContainer.appendChild(dot)
     })
   }
