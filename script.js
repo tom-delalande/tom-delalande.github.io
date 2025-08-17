@@ -23,10 +23,9 @@ class Carousel {
     dotsContainer.innerHTML = ""
 
     this.images.forEach((_, index) => {
-      const dot = document.createElement("button")
+      const dot = document.createElement("div")
       dot.className = "cd-dot"
       dot.setAttribute("aria-label", `View image ${index + 1}`)
-      dot.addEventListener("click", () => this.goToSlide(index))
       dotsContainer.appendChild(dot)
     })
   }
@@ -46,11 +45,6 @@ class Carousel {
 
   goToNext() {
     this.currentIndex = this.currentIndex === this.images.length - 1 ? 0 : this.currentIndex + 1
-    this.updateDisplay()
-  }
-
-  goToSlide(index) {
-    this.currentIndex = index
     this.updateDisplay()
   }
 
