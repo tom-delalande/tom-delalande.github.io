@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A portfolio for a software engineer">
   <title>Tom Delalande - Software Engineer</title>
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
   <style>
     * {
       margin: 0;
@@ -44,6 +48,7 @@
     }
 
     .nb {
+      align-self: start;
       font-weight: 500;
     }
 
@@ -410,6 +415,12 @@
     .cr[data-single="true"] .ct {
       display: none;
     }
+
+    @media (width <=48rem) {
+      .nl {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 
@@ -494,9 +505,9 @@
           <div class="p">
             <div class="ph">
               <h3 class="pt">
-                <a href="#" class="pa">CLI Tool</a>
+                <a href="#" class="pa">Low Level Programing</a>
               </h3>
-              <span class="py">MacOS Setup</span>
+              <span class="py">Conway's Game of Life in Assembly Language</span>
             </div>
             <p class="pd">
               A tool that creates interactive CLI applications from YAML configuration. Initially created to make an
@@ -535,7 +546,7 @@
           <div class="e">
             <div class="eh">
               <h3 class="et">Software Engineer</h3>
-              <span class="ep">2020—2022</span>
+              <span class="ep">2021—2024</span>
             </div>
             <p class="ec">Virtual Gaming Worlds - Online Gaming</p>
             <p class="ed">
@@ -560,14 +571,28 @@
             <h3 class="tt">Languages</h3>
             <ul class="tl">
               <li class="ti">
-                <span class="tn">JavaScript / TypeScript</span>
+                <span class="tn">Kotlin</span>
                 <div class="tm">
-                  <span class="ty">5y</span>
+                  <span class="ty">4y</span>
                   <span class="td tp" title="Professional experience"></span>
                 </div>
               </li>
               <li class="ti">
-                <span class="tn">Python</span>
+                <span class="tn">TypeScript</span>
+                <div class="tm">
+                  <span class="ty">4y</span>
+                  <span class="td tp" title="Professional experience"></span>
+                </div>
+              </li>
+              <li class="ti">
+                <span class="tn">SQL</span>
+                <div class="tm">
+                  <span class="ty">4y</span>
+                  <span class="td tp" title="Professional experience"></span>
+                </div>
+              </li>
+              <li class="ti">
+                <span class="tn">HCL (Terraform)</span>
                 <div class="tm">
                   <span class="ty">4y</span>
                   <span class="td tp" title="Professional experience"></span>
@@ -576,15 +601,15 @@
               <li class="ti">
                 <span class="tn">Go</span>
                 <div class="tm">
-                  <span class="ty">2y</span>
+                  <span class="ty">3y</span>
                   <span class="td tr" title="Personal experience"></span>
                 </div>
               </li>
               <li class="ti">
-                <span class="tn">SQL</span>
+                <span class="tn">C</span>
                 <div class="tm">
-                  <span class="ty">6y</span>
-                  <span class="td tp" title="Professional experience"></span>
+                  <span class="ty">1y</span>
+                  <span class="td tr" title="Personal experience"></span>
                 </div>
               </li>
             </ul>
@@ -593,30 +618,37 @@
             <h3 class="tt">Technologies</h3>
             <ul class="tl">
               <li class="ti">
-                <span class="tn">React / Next.js</span>
-                <div class="tm">
-                  <span class="ty">5y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">Node.js / Express</span>
+                <span class="tn">React</span>
                 <div class="tm">
                   <span class="ty">4y</span>
                   <span class="td tp" title="Professional experience"></span>
                 </div>
               </li>
               <li class="ti">
-                <span class="tn">PostgreSQL / Redis</span>
+                <span class="tn">PostgreSQL</span>
                 <div class="tm">
-                  <span class="ty">3y</span>
+                  <span class="ty">4y</span>
                   <span class="td tp" title="Professional experience"></span>
                 </div>
               </li>
               <li class="ti">
-                <span class="tn">AWS / Docker</span>
+                <span class="tn">AWS</span>
                 <div class="tm">
-                  <span class="ty">3y</span>
+                  <span class="ty">4y</span>
+                  <span class="td tp" title="Professional experience"></span>
+                </div>
+              </li>
+              <li class="ti">
+                <span class="tn">Docker</span>
+                <div class="tm">
+                  <span class="ty">4y</span>
+                  <span class="td tp" title="Professional experience"></span>
+                </div>
+              </li>
+              <li class="ti">
+                <span class="tn">Spring</span>
+                <div class="tm">
+                  <span class="ty">2y</span>
                   <span class="td tp" title="Professional experience"></span>
                 </div>
               </li>
