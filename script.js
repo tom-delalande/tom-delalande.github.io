@@ -13,16 +13,23 @@ class Carousel {
   }
 
   init() {
+    this.preloadImages()
     this.createDots()
     this.bindEvents()
     this.updateDisplay()
+  }
+
+  preloadImages() {
+    this.images.forEach((url, _) => {
+      (new Image()).src = url;
+    })
   }
 
   createDots() {
     const dotsContainer = this.element.querySelector(".cd")
     dotsContainer.innerHTML = ""
 
-    this.images.forEach((_, index) => {
+    this.images.forEach((_, _index) => {
       const dot = document.createElement("div")
       dot.className = "cd-dot"
       dotsContainer.appendChild(dot)
