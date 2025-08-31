@@ -137,14 +137,6 @@
       font-size: 14px;
     }
 
-    .px {
-      color: #666;
-    }
-
-    .px:hover {
-      color: #000;
-    }
-
     .cr,
     .cs {
       margin-bottom: 16px;
@@ -263,17 +255,10 @@
       margin-bottom: 4px;
     }
 
-    /* Technologies */
     .tg {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 32px;
-    }
-
-    @media (min-width: 768px) {
-      .tg {
-        grid-template-columns: 1fr 1fr;
-      }
     }
 
     .tt {
@@ -420,6 +405,46 @@
       .nl {
         flex-direction: column;
       }
+
+      .tg {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cap {
+      text-decoration: underline;
+      color: oklch(68.5% 0.169 237.323);
+    }
+
+    .prt,
+    .cap {
+      display: none;
+    }
+
+    @media print {
+
+      .nl,
+      .cb,
+      .cd,
+      .ct,
+      .ft,
+      .ca,
+      #top {
+        display: none;
+      }
+
+      .ft.prt,
+      .cap {
+        display: unset;
+      }
+
+      .td {
+        print-color-adjust: exact;
+      }
+
+      .tg {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </head>
@@ -455,74 +480,94 @@
           <div class="p">
             <div class="ph">
               <h3 class="pt">
-                <a href="#" class="pa">Web API</a>
+                <a href="#" class="pa">Poker Game Against Bots &amp; Players</a>
               </h3>
-              <span class="py">Poker Server</span>
+              <span class="py">Tiny Poker</span>
             </div>
             <p class="pd">
-              A secure, fast, well-documented Web API for Poker games. Let's you create tournaments, register players
-              (or bots) and play hands.
-            </p>
-
-            <div class="cr" data-images='["./assets/image1.jpg", "./assets/image2.jpg"]'>
-              <div class="cc">
-                <img src="./assets/image1.jpg" alt="Project Alpha interface - 1" class="ci">
-                <button class="cb cp" aria-label="Previous image">←</button>
-                <button class="cb cn" aria-label="Next image">→</button>
-              </div>
-              <div class="cd"></div>
-              <div class="ct">1 / 2</div>
-            </div>
-
-            <div class="pe">
-              <a href="#" class="px">Live Demo ↗</a>
-              <a href="#" class="px">Source ↗</a>
-            </div>
-          </div>
-
-          <div class="p">
-            <div class="ph">
-              <h3 class="pt">
-                <a href="#" class="pa">Reactive Frontend</a>
-              </h3>
-              <span class="py">Up Bank Web Client</span>
-            </div>
-            <p class="pd">
-              A reactive web client for a (mobile only) Bank built using React and Shadcn/ui.
+              Tiny Poker is a poker game with a simple, beautiful UI. You can play against bots with a variety of
+              play-styles or against other players.
             </p>
 
             <div class="cr"
-              data-images='["./assets/up-bank-web-gif-1.gif", "./assets/up-bank-web-screenshot-1.png", "./assets/up-bank-web-screenshot-2.png"]'>
+              data-images='["https://raw.githubusercontent.com/tom-delalande/tiny-poker/refs/heads/main/docs/image-hand-end.png", "https://raw.githubusercontent.com/tom-delalande/tiny-poker/refs/heads/main/docs/image-opponent-emma.png", "https://raw.githubusercontent.com/tom-delalande/tiny-poker/refs/heads/main/docs/image-opponents.png"]'>
               <div class="cc">
-                <img src="./assets/up-bank-web-gif-1.gif" alt="Up Bank Web GIF" class="ci">
+                <img
+                  src="https://raw.githubusercontent.com/tom-delalande/tiny-poker/refs/heads/main/docs/image-hand-end.png"
+                  alt="Poker Game" class="ci">
                 <button class="cb cp" aria-label="Previous image">←</button>
                 <button class="cb cn" aria-label="Next image">→</button>
               </div>
               <div class="cd"></div>
-              <div class="ct">1 / 3</div>
+              <div class="ct"></div>
             </div>
 
             <div class="pe">
-              <a href="up-bank.delalande.co" class="px">Live Demo ↗</a>
-              <a href="https://github.com/tom-delalande/up-bank-web-app" class="px">Source ↗</a>
+              <!-- <a href="#" class="px">Live Demo ↗</a> -->
+              <a href="https://github.com/tom-delalande/tiny-poker" class="ca">Source ↗</a>
+              <span class="cap">https://github.com/tom-delalande/tiny-poker</span>
             </div>
           </div>
 
           <div class="p">
             <div class="ph">
               <h3 class="pt">
-                <a href="#" class="pa">Low Level Programing</a>
+                <a href="#" class="pa">Beautiful timetables from CSV files</a>
               </h3>
-              <span class="py">Conway's Game of Life in Assembly Language</span>
+              <span class="py">Timetable Generator</span>
             </div>
             <p class="pd">
-              A tool that creates interactive CLI applications from YAML configuration. Initially created to make an
-              interactive laptop setup script.
+              Timetable Generator is a complete product that let's users create beautiful timetables from simple CSV
+              files. It comes with a landing page, product, free trial and paid version. You can link directly to a
+              dedicated page or embed it as an iFrame.
             </p>
 
+            <div class="cr"
+              data-images='["https://raw.githubusercontent.com/tom-delalande/timetable-generator/main/docs/image-edit-page.png"]'>
+              <div class="cc">
+                <img
+                  src="https://raw.githubusercontent.com/tom-delalande/timetable-generator/main/docs/image-edit-page.png"
+                  alt="Timetable Generator" class="ci">
+                <button class="cb cp" aria-label="Previous image">←</button>
+                <button class="cb cn" aria-label="Next image">→</button>
+              </div>
+              <div class="cd"></div>
+              <div class="ct"></div>
+            </div>
+
             <div class="pe">
-              <a href="#" class="px">Documentation ↗</a>
-              <a href="#" class="px">Source ↗</a>
+              <!-- <a href="#" class="px">Live Demo ↗</a> -->
+              <a href="https://github.com/tom-delalande/timetable-generator" class="ca">Source ↗</a>
+              <span class="cap">https://github.com/tom-delalande/timetable-generator</span>
+            </div>
+          </div>
+
+          <div class="p">
+            <div class="ph">
+              <h3 class="pt">
+                <a href="#" class="pa">Audio Plugins For Music Production</a>
+              </h3>
+              <span class="py">Tiny Audio</span>
+            </div>
+            <p class="pd">
+              Tiny Audio is a collection of CLAP audio plugins for music production written in C. Including a sine wave
+              synthesizer and a gain effect.
+            </p>
+            <div class="cr"
+              data-images='["https://raw.githubusercontent.com/tom-delalande/tiny-audio/main/docs/image-plugins.png"]'>
+              <div class="cc">
+                <img src="https://raw.githubusercontent.com/tom-delalande/tiny-audio/main/docs/image-plugins.png"
+                  alt="Audio Plugins" class="ci">
+                <button class="cb cp" aria-label="Previous image">←</button>
+                <button class="cb cn" aria-label="Next image">→</button>
+              </div>
+              <div class="cd"></div>
+              <div class="ct"></div>
+            </div>
+
+            <div class="pe">
+              <a href="https://github.com/tom-delalande/tiny-audio" class="ca">Source ↗</a>
+              <span class="cap">https://github.com/tom-delalande/tiny-audio</span>
             </div>
           </div>
         </div>
@@ -678,20 +723,28 @@
         <h2 class="st">Contact</h2>
         <div class="cl">
           <div class="co">
-            <p class="ca">tom <bold>at</bold> delalance.co</p>
+            <p class="ca">tom <bold>at</bold> delalande.co</p>
+            <span class="cap">tom at delalande.co</span>
           </div>
           <div class="co">
-            <a target="_blank" href="https://github.com/tom-delalande" class="ca">GitHub ↗</a>
+            <a href="https://github.com/tom-delalande" class="ca">GitHub ↗</a>
+            <span class="cap">https://github.com/tom-delalande</span>
           </div>
           <div class="co">
-            <a target="_blank" href="https://www.linkedin.com/in/tom-d-15402b15b" class="ca">LinkedIn ↗</a>
+            <a href="https://www.linkedin.com/in/tom-delalande-profile/" class="ca">LinkedIn ↗</a>
+            <span class="cap">https://www.linkedin.com/in/tom-delalande-profile/</span>
           </div>
         </div>
       </section>
 
       <footer class="f">
         <p class="ft">
-          Made with <span class="hr">♥</span> using HTML, CSS and JavaScript. Self-hosted on a Raspberry Pi
+          Made with <span class="hr">♥</span> using HTML, CSS and JavaScript. Hosted on <a
+            href="https://github.com/tom-delalande/tom-delalande.github.io" class="ca">Github Pages ↗</a>
+        </p>
+        <p class="ft prt">
+          Made with <span class="hr">♥</span> using HTML and CSS. Available online at <span
+            class="cap">https://delalande.co</span>
         </p>
       </footer>
     </div>
