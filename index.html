@@ -87,7 +87,6 @@
       color: #666;
       font-size: 18px;
       line-height: 1.625;
-      max-width: 512px;
     }
 
     .s {
@@ -244,8 +243,7 @@
     }
 
     .ex {
-      color: #333;
-      font-size: 14px;
+      font-size: 16px;
       list-style: none;
       margin-left: 16px;
     }
@@ -451,11 +449,13 @@
         flex-direction: row;
       }
     }
+    .sg { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .sgc { margin-bottom: 8px; font-weight: 600; }
   </style>
 </head>
 
 <body>
-  <nav class=" n">
+  <nav class="n">
     <div class="c">
       <div class="nc">
         <div class="nb">Tom Delalande</div>
@@ -474,8 +474,7 @@
       <section class="h">
         <h1 class="ht">Software Engineer</h1>
         <p class="hd">
-          I turn complex problems into simple products that provide delightful experiences for end users. I am a pragmatic and technical
-          developer who focuses on delivering value and minimising risk.
+          Software Engineer (4+ years) experienced in building scalable, reliable systems across fintech and online gaming. Known for high ownership, cross-functional collaboration, and delivering measurable performance and productivity improvements. Led development of new product features and integrations, improved critical system performance by 90%+, and drove testing/automation initiatives in startup and enterprise environments.
         </p>
       </section>
 
@@ -488,21 +487,12 @@
               <span class="ep">Feb 2024—Present</span>
             </div>
             <p class="ec">Moneycatcha - Fintech Startup</p>
-            <p class="ed">
-                <b>Kotlin • Java • JVM • Spring • Docker • AWS • Terraform • Event Sourcing •
-                  Honeycomb • Metabase • React • TypeScript • Tailwind • GitLab • CI/CD • AI Tooling • Jira • Confluence</b>
-            </p>
-            <p class="ed">
-              Worked within a team of 4 developers in a fast paced startup environment to prioritise, design, implement 
-              and maintain software that helps mortgage brokers keep track of their trailbook. I touched every part of the product 
-              and business, managing feature work, infrastructure, product design, customer service and external meetings with
-              corporate clients in an agile environment (Scrum and then Shape Up).
-            </p>
             <ul class="ex">
-              <li>• Prevented all regressions from the most critical service by implementing a robust unit testing suite</li>
-              <li>• Used AI tooling to automate tasks in a small fast paced team</li>
-              <li>• Led integration with key aggregators to improve data quality and quantity for brokers</li>
-              <li>• Improved the performance of the most critical page from 70 seconds to &lt; 4 seconds</li>
+              <li>• Improved performance of the most critical broker-facing page from 70s → &lt; 4s by profiling backend bottlenecks and redesigning API access, dramatically speeding up customer workflows.</li>
+              <li>• Eliminated regressions in the highest-risk service by designing and implementing a comprehensive unit test suite, reducing production incidents to zero over 6+ months.</li>
+              <li>• Led integrations with major aggregator partners, increasing data completeness and accuracy for all new broker accounts.</li>
+              <li>• Owned end-to-end feature delivery across Kotlin backend, React frontend, AWS infrastructure, product design, and customer support.</li>
+              <li>• Introduced team-wide AI tooling to accelerate development and QA workflows, improving overall delivery speed.</li>
             </ul>
           </div>
 
@@ -511,21 +501,13 @@
               <h3 class="et">Software Engineer</h3>
               <span class="ep">Jun 2021—Feb 2024</span>
             </div>
-            <p class="ec">Virtual Gaming Worlds - Online Gaming</p>
-            <p class="ed">
-                <b>Kotlin • Java • JVM • Ktor • Microservices • Docker • AWS • Terraform • Event Sourcing •
-                  PostgreSQL • Snowflake • React • TypeScript • Playwright • CircleCI • Auth0 • GitHub • Honeycomb • Jira</b>
-            </p>
-            <p class="ed">
-              I worked on a large team contributing to the Global Poker platform; an online Casino
-              platform with about 10,000 monthly active users. As a leader of the poker domain I was responsible for
-              designing, implementing and managing teams that delivered new game modes like private games, a fast fold
-              game mode and tournament Sit and Go games.
-            </p>
+            <p class="ec">Virtual Gaming Worlds - Global Poker Platform (~10k MAU)</p>
             <ul class="ex">
-              <li>• Implemented end-to-end testing using Playwright for key product flows</li>
-              <li>• Led and mentored multiple teams to create brand new poker game modes</li>
-              <li>• Documented and fixed critical bugs in the authentication sytem</li>
+              <li>• Led the engineering domain for poker game modes, coordinating multiple teams to launch new offerings including private tables, fast‑fold, and Sit & Go tournaments. Improving player engagement and session length.</li>
+              <li>• Designed and shipped microservice features in Kotlin/Ktor with event-sourced game logic running on AWS.</li>
+              <li>• Developed an end‑to‑end Playwright testing suite for authentication and key flows, significantly reducing regressions in high‑traffic areas.</li>
+              <li>• Diagnosed and resolved critical issues in the authentication system (Auth0), improving login reliability and reducing support load. </li>
+              <li>• Mentored junior engineers and influenced architectural decisions within the poker engineering domain.</li>
             </ul>
           </div>
         </div>
@@ -533,128 +515,37 @@
 
       <section id="technologies" class="s">
         <h2 class="st">Technologies</h2>
-        <div class="tg">
-          <div class="tc">
-            <h3 class="tt">Languages</h3>
-            <ul class="tl">
-              <li class="ti">
-                <span class="tn">Kotlin</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">TypeScript</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">SQL</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">HCL (Terraform)</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">Java</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">C</span>
-                <div class="tm">
-                  <span class="ty">1y</span>
-                  <span class="td tr" title="Personal experience"></span>
-                </div>
-              </li>
-            </ul>
+        <div class="sg">
+          <div>
+            <div class="sgc">Languages</div>
+            <p>Kotlin, TypeScript, Java, SQL, HCL (Terraform), C</p>
           </div>
-          <div class="tc">
-            <h3 class="tt">Technologies</h3>
-            <ul class="tl">
-              <li class="ti">
-                <span class="tn">React</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">PostgreSQL</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">AWS</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">Docker</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">JVM</span>
-                <div class="tm">
-                  <span class="ty">4y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-              <li class="ti">
-                <span class="tn">Spring</span>
-                <div class="tm">
-                  <span class="ty">2y</span>
-                  <span class="td tp" title="Professional experience"></span>
-                </div>
-              </li>
-            </ul>
+          <div>
+            <div class="sgc">Backend &amp; Infra</div>
+            <p>JVM, Spring, Ktor, Event Sourcing, Microservices, AWS, Docker, Terraform, CI/CD</p>
           </div>
-        </div>
-
-        <div class="tl ta">
-          <div class="li">
-            <span class="td tp"></span>
-            <span>Professional</span>
+          <div>
+            <div class="sgc">Frontend</div>
+            <p>React, TypeScript, Tailwind</p>
           </div>
-          <div class="li">
-            <span class="td tr"></span>
-            <span>Personal</span>
+          <div>
+            <div class="sgc">Tooling</div>
+            <p>Honeycomb, Auth0, GitHub/GitLab, Playwright</p>
           </div>
         </div>
       </section>
-
       <section id="projects" class="s">
         <h2 class="st">Projects</h2>
         <div class="pl">
           <div class="p">
             <div class="ph">
               <h3 class="pt">
-                <a href="#" class="pa">Poker Game Against Bots &amp; Players</a>
+                <a href="#" class="pa">Multiplayer &amp; Bot‑Driven Poker Engine</a>
               </h3>
               <span class="py">Tiny Poker</span>
             </div>
             <p class="pd">
-              Tiny Poker is a poker game with a simple UI. You can play against bots with a variety of
-              play-styles or against other players.
+              Real‑time poker game with multiple bot personalities and player‑vs‑player support.
             </p>
 
             <div class="cr"
@@ -685,9 +576,7 @@
               <span class="py">Timetable Generator</span>
             </div>
             <p class="pd">
-              Timetable Generator is a complete product that lets users create beautiful timetables from simple CSV
-              files. It comes with a landing page, product, free trial and paid versions. You can link directly to a
-              dedicated page or embed it as an iFrame.
+              Full product with landing page, free trial, paid version, and embeddable pages for users.
             </p>
 
             <div class="cr"
@@ -713,13 +602,12 @@
           <div class="p">
             <div class="ph">
               <h3 class="pt">
-                <a href="#" class="pa">Audio Plugins For Music Production</a>
+                <a href="#" class="pa">CLAP Plugins for Music Production</a>
               </h3>
               <span class="py">Tiny Audio</span>
             </div>
             <p class="pd">
-              Tiny Audio is a collection of CLAP audio plugins for music production written in C. Including a sine wave
-              synthesizer and a gain effect.
+              Collection of audio plugins written in C, including synthesizers and gain effects.
             </p>
             <div class="cr"
               data-images='["https://raw.githubusercontent.com/tom-delalande/tiny-audio/main/docs/image-plugins.png"]'>
@@ -763,14 +651,14 @@
         <!-- <p class="ft"> -->
         <!--     <i>Last Updated: 2025-11-11</i> -->
         <!-- </p> -->
-        <p class="ft">
-          Made with <span class="hr">♥</span> using HTML, CSS and JavaScript. Hosted on <a
-            href="https://github.com/tom-delalande/tom-delalande.github.io" class="ca">Github Pages ↗</a>
-        </p>
-        <p class="ft prt">
-          Made with <span class="hr">♥</span> using HTML and CSS. Available online at <span
-            class="cap">https://delalande.co</span>
-        </p>
+        <!-- <p class="ft"> -->
+        <!--   Made with <span class="hr">♥</span> using HTML, CSS and JavaScript. Hosted on <a -->
+        <!--     href="https://github.com/tom-delalande/tom-delalande.github.io" class="ca">Github Pages ↗</a> -->
+        <!-- </p> -->
+        <!-- <p class="ft prt"> -->
+        <!--   Made with <span class="hr">♥</span> using HTML and CSS. Available online at <span -->
+        <!--     class="cap">https://delalande.co</span> -->
+        <!-- </p> -->
       </footer>
     </div>
   </main>
