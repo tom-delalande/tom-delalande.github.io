@@ -1,0 +1,19 @@
+{
+  "jobTitle": "Software Engineer",
+  "summary": "Software Engineer (4+ years) experienced in building scalable, reliable systems across fintech and online gaming. Known for high ownership, cross-functional collaboration, and delivering measurable performance and productivity improvements. Led development of new product features and integrations, improved critical system performance by 90%+, and drove testing/automation initiatives in startup and enterprise environments.",
+  "moneycatchaSummary": "SaaS platform helping mortgage brokers manage customer retention and trailbook performance",
+  "moneycatchaBulletPoints": [
+    "Improved performance of the most critical broker-facing page from 70s → <4s by profiling backend bottlenecks and redesigning API access, dramatically speeding up customer workflows.",
+    "Eliminated regressions in the highest-risk service by designing and implementing a comprehensive unit test suite, reducing production incidents to zero over 6+ months.",
+    "Led integrations with major aggregator partners, increasing data completeness and accuracy for all new broker accounts.",
+    "Owned end-to-end feature delivery across Kotlin backend, React frontend, AWS infrastructure, product design, and customer support."
+  ],
+  "vgwSummary": "Built social casino experiences including a online poker game (~10k MAU)",
+  "vgwBulletPoints": [
+    "Led the engineering domain for poker game modes, coordinating multiple teams to launch new offerings including private tables, fast‑fold, and Sit & Go tournaments. Improving player engagement and session length.",
+    "Designed and shipped microservice features in Kotlin/Ktor with event-sourced game logic running on AWS.",
+    "Developed an end‑to‑end Playwright testing suite for authentication and key flows, significantly reducing regressions in high‑traffic areas.",
+    "Diagnosed and resolved critical issues in the authentication system (Auth0), improving login reliability and reducing support load.",
+    "Mentored junior engineers and influenced architectural decisions within the poker engineering domain."
+  ]
+}

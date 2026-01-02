@@ -1,0 +1,3 @@
+module delalande.co/build
+
+go 1.25.5
